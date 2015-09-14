@@ -5,6 +5,10 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.3'
 # Bootstrap-sass gem
 gem 'bootstrap-sass'
+# Pry adds many extra features not available using IRB shell
+gem 'pry-rails', :group => :development
+# Include faker Gem
+gem 'faker'
 # Use sqlite3 as the database for Active Record
 group :production do
 	gem 'pg'
