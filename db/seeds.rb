@@ -17,6 +17,16 @@ posts = Post.all
 	)
 end
 
+post = Post.where(
+	title: "My custom title", 
+	body: "my custom body"
+	).first_or_create
+
+Comment.where(
+	post: post
+	body: "novel comment"
+	).first_or_create
+
 puts "Seed finished"
 puts "#{Post.count} posts created"
 puts "#{Comment.count} comments created"
