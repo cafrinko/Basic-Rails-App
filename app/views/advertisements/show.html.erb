@@ -1,0 +1,9 @@
+<h1>
+	<%= @advertisement.title %>
+	<small><%= link_to "Edit", edit_advertisement_path(@advertisement), class: 'btn btn-success' %>
+		<%= link_to "Delete", @advertisement, method: :delete, class: 'btn btn-danger' %>
+	</small>
+</h1>
+<p><%= @advertisement.copy %></p>
+<p>$<%= @advertisement.price %></p>
+
